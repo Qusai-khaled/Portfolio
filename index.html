@@ -2,22 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>My Portfolio </title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Qusai Khaled Portfolio" name="keywords">
-    <meta content="Qusai Khaled Portfolio" name="description">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio – Qusai Khaled</title>
+    <meta name="keywords" content="Qusai Khaled Portfolio" />
+    <meta name="description"
+        content="Qusai Khaled - Full Stack/Laravel Developer. 4+ years building e-commerce, real-estate, employment and education platforms." />
+    <link rel="canonical" href="https://qusai-khaled.github.io/Portfolio/" />
+
+    <meta property="og:title" content="Qusai Khaled – Full Stack Developer" />
+    <meta property="og:description" content="4+ years experience. Portfolio, skills, and projects." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://qusai-khaled.github.io/Portfolio/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
+
     <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <!-- Template Stylesheet -->
+
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .portfolio .portfolio-wrap {
+            transition: transform .25s ease, box-shadow .25s ease;
+            will-change: transform;
+        }
+
+        .portfolio .portfolio-wrap:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, .08);
+        }
+
+        .btn.btn-download {
+            transition: transform .2s ease;
+        }
+
+        .btn.btn-download:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Qusai Khaled",
+    "jobTitle": "Full Stack Developer",
+   
+    "url": "https://qusai-khaled.github.io/Portfolio/",
+    "email": "mailto:qusai952198@gmail.com",
+    "telephone": "+962780316716",
+    "address": { "@type": "PostalAddress", "addressLocality": "Amman", "addressCountry": "JO" },
+    "sameAs": [
+      "https://www.facebook.com/qsy.alnablsy",
+      "https://www.linkedin.com/in/qusai-khaled-7a4b06326",
+      "https://github.com/Qusai-khaled"
+    ]
+  }
+  </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -25,7 +98,8 @@
     <div class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
             <!-- <a href="index.html" class="navbar-brand">My Portfolio </a> -->
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
@@ -59,14 +133,12 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 d-none d-md-block">
-                    <div class="hero-image">
-                    </div>
+                    <div class="hero-image"></div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Hero End -->
-
 
     <!-- About Start -->
     <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
@@ -79,15 +151,16 @@
                             <h2>4 Years Experience</h2>
                             <h6>
                                 Experienced Laravel Developer with a proven track record of building dynamic,
-                                user-friendly
-                                websites and applications for over 4 years. Over the past few years, I have successfully
+                                user-friendly websites and applications for over 4 years. Over the past few years, I
+                                have successfully
                                 developed and launched multiple projects, including e-commerce platforms, real-estate
                                 websites, employment websites, and educational platforms.
                             </h6>
                         </div>
                         <div class="resume-download">
-                            <a href="docs/Qusai_Khaled_Resume.pdf" target="_blank" download class="btn btn-download">
-                                <i class="fa fa-download"></i> Download My Resume
+                            <a href="docs/Qusai_Khaled_Resume.pdf" target="_blank" rel="noopener noreferrer" download
+                                class="btn btn-download">
+                                <i class="fa fa-download" aria-hidden="true"></i> <span>Download My Resume</span>
                             </a>
                         </div>
                     </div>
@@ -156,6 +229,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="section-header text-center wow zoomIn mt-4" data-wow-delay="0.1s">
                             <h2>Professional Skills</h2>
                         </div>
@@ -211,7 +285,6 @@
     </div>
     <!-- skills End -->
 
-
     <!-- Service Start -->
     <div class="service" id="service">
         <div class="container">
@@ -220,34 +293,26 @@
                 <h2>Awesome Quality Services</h2>
             </div>
             <div class="row">
-
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="service-item">
-                        <div class="service-icon">
-                            <i class="fa fa-laptop-code"></i>
-                        </div>
+                        <div class="service-icon"><i class="fa fa-laptop-code" aria-hidden="true"></i></div>
                         <div class="service-text">
                             <h3>Web Development</h3>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="service-item">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
+                        <div class="service-icon"><i class="fas fa-mobile-alt" aria-hidden="true"></i></div>
                         <div class="service-text">
                             <h3>Mobile API Development</h3>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
     <!-- Service End -->
-
 
     <!-- Education Start -->
     <div class="education" id="education">
@@ -267,8 +332,6 @@
     </div>
     <!-- Education End -->
 
-
-
     <!-- Experience Start -->
     <div class="experience" id="experience">
         <div class="container">
@@ -277,7 +340,6 @@
                 <h2>Working Experience</h2>
             </header>
             <div class="timeline">
-                <!-- تجربة العمل -->
                 <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
                         <div class="timeline-date">07/2020 - Present</div>
@@ -300,13 +362,10 @@
                         <h4>Jordan-Zarqa</h4>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
     <!-- Experience End -->
-
 
     <!-- Portfolio Start -->
     <div class="portfolio" id="portfolio">
@@ -316,11 +375,51 @@
                 <h2>My Excellent Portfolio</h2>
             </div>
             <div class="row portfolio-container">
+
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://taawon.com/ar" target="_blank" class="portfolio-link">
+                    <a href="https://enforall.com/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/taawon.png" alt="Taawon Group">
+                                <img src="img/efa.png" alt="Efa website preview" loading="lazy" decoding="async"
+                                    width="400" height="300">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>English For All</h3>
+                                <p class="color-dark">Website</p>
+                                <p class="color-dark">Blue Ray for Web Solutions</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+
+                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <a href="https://8dec.com.tr/en" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/8dec.png" alt="8December Coffee  website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>8December Coffee </h3>
+                                <p class="color-dark">Website</p>
+                                <p class="freelance">Freelance</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <a href="https://taawon.com/ar" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/taawon.png" alt="Taawon Group website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Taawon Group</h3>
@@ -330,25 +429,14 @@
                         </div>
                     </a>
                 </div>
+
+                
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://www.diyarnaa.com/ar" target="_blank" class="portfolio-link">
+                    <a href="https://al-bausalah.com/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/diyarnaa.png" alt="Diyarnaa">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Diyarnaa</h3>
-                                <p class="color-dark">Website</p>
-                                <p class="color-dark">Blue Ray for Web Solutions</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://al-bausalah.com/" target="_blank" class="portfolio-link">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/bausalah.jpg" alt="al-Bausalah">
+                                <img src="img/bausalah.jpg" alt="al-Bausalah website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>al-Bausalah</h3>
@@ -359,11 +447,11 @@
                     </a>
                 </div>
 
-
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/RestFort.png" alt="Rest Fort">
+                            <img src="img/RestFort.png" alt="Rest Fort mobile app preview" loading="lazy"
+                                decoding="async" width="400" height="300">
                         </div>
                         <div class="portfolio-text">
                             <h3>Rest Fort</h3>
@@ -371,16 +459,14 @@
                             <p class="freelance">Freelance</p>
                         </div>
                     </div>
-
                 </div>
 
-
-
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://injazco.com/ar" target="_blank" class="portfolio-link">
+                    <a href="https://injazco.com/ar" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/injazco.webp" alt="Injaz Group">
+                                <img src="img/injazco.webp" alt="Injaz Group website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Injaz Group</h3>
@@ -390,11 +476,13 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://almajd.se/en" target="_blank" class="portfolio-link">
+                    <a href="https://almajd.se/en" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/almajd.png" alt="Almajd Bageri">
+                                <img src="img/almajd.png" alt="Almajd Bageri website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Almajd Bageri</h3>
@@ -404,11 +492,14 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://www.paradisebakeries.com/ar" target="_blank" class="portfolio-link">
+                    <a href="https://www.paradisebakeries.com/ar" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/paradise.webp" alt="Paradise Bakeries">
+                                <img src="img/paradise.webp" alt="Paradise Bakeries website & mobile app preview"
+                                    loading="lazy" decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Paradise Bakeries</h3>
@@ -418,11 +509,13 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://daliajo.com/en" target="_blank" class="portfolio-link">
+                    <a href="https://daliajo.com/en" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/daliajo.png" alt="Jerusalem Factory">
+                                <img src="img/daliajo.png" alt="Jerusalem Factory (Daliajo) website preview"
+                                    loading="lazy" decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Jerusalem Factory</h3>
@@ -432,11 +525,13 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://wzfni.com/ar" target="_blank" class="portfolio-link">
+                    <a href="https://wzfni.com/ar" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/wzfni.webp" alt="Wzfni">
+                                <img src="img/wzfni.webp" alt="Wzfni website preview" loading="lazy" decoding="async"
+                                    width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Wzfni</h3>
@@ -446,11 +541,14 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://pescaratrading.com/en" target="_blank" class="portfolio-link">
+                    <a href="https://pescaratrading.com/en" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/pescaratrading.png" alt="Pescara Trading">
+                                <img src="img/pescaratrading.png" alt="Pescara Trading website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Pescara Trading</h3>
@@ -460,11 +558,13 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://amr.org.jo/ar" target="_blank" class="portfolio-link">
+                    <a href="https://amr.org.jo/ar" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/amr.png" alt="AMR">
+                                <img src="img/amr.png" alt="AMR website preview" loading="lazy" decoding="async"
+                                    width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>AMR</h3>
@@ -475,11 +575,11 @@
                     </a>
                 </div>
 
-
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/magmalifestyle.png" alt="Magma Life Style">
+                            <img src="img/magmalifestyle.png" alt="Magma Life Style mobile app preview" loading="lazy"
+                                decoding="async" width="400" height="300">
                         </div>
                         <div class="portfolio-text">
                             <h3>Magma Life Style</h3>
@@ -487,23 +587,14 @@
                             <p class="freelance">Freelance</p>
                         </div>
                     </div>
-
                 </div>
 
-
-
-
-
-
-
-
-
-
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://pillarium.com/en" target="_blank" class="portfolio-link">
+                    <a href="https://pillarium.com/en" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/pillarium.png" alt="Pillarium">
+                                <img src="img/pillarium.png" alt="Pillarium website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Pillarium</h3>
@@ -513,11 +604,13 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://l4lifejo.com/ar" target="_blank" class="portfolio-link">
+                    <a href="https://l4lifejo.com/ar" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/l4lifejo.png" alt="Learn for Life">
+                                <img src="img/l4lifejo.png" alt="Learn for Life website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Learn for Life</h3>
@@ -527,11 +620,13 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://munichco.com/" target="_blank" class="portfolio-link">
+                    <a href="https://munichco.com/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/munichco.png" alt="Munich">
+                                <img src="img/munichco.png" alt="Munich website preview" loading="lazy" decoding="async"
+                                    width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Munich </h3>
@@ -542,12 +637,13 @@
                     </a>
                 </div>
 
-
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://www.ardhsomer.com/" target="_blank" class="portfolio-link">
+                    <a href="https://www.ardhsomer.com/" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/ardhsomer.png" alt="Ardh Somer">
+                                <img src="img/ardhsomer.png" alt="Ardh Somer website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Ardh Somer </h3>
@@ -558,13 +654,12 @@
                     </a>
                 </div>
 
-
-
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://hamburg-htee.com" target="_blank" class="portfolio-link">
+                    <a href="https://hamburg-htee.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/hamburg.jpg" alt="Hamburg">
+                                <img src="img/hamburg.jpg" alt="Hamburg website preview" loading="lazy" decoding="async"
+                                    width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Hamburg</h3>
@@ -576,10 +671,12 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://ammanpetrol.com/ar" target="_blank" class="portfolio-link">
+                    <a href="https://ammanpetrol.com/ar" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/ammanpetrol.png" alt="Amman Diesel">
+                                <img src="img/ammanpetrol.png" alt="Amman Diesel website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Amman Diesel</h3>
@@ -590,14 +687,13 @@
                     </a>
                 </div>
 
-
-
-
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://adva-therm.com/ar" target="_blank" class="portfolio-link">
+                    <a href="https://adva-therm.com/ar" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/AdvaTherm.jpg" alt="Adva Therm">
+                                <img src="img/AdvaTherm.jpg" alt="Adva Therm website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Adva Therm</h3>
@@ -608,12 +704,13 @@
                     </a>
                 </div>
 
-
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://projectsdecoration.com/en" target="_blank" class="portfolio-link">
+                    <a href="https://projectsdecoration.com/en" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/projectsdecoration.png" alt="Decor">
+                                <img src="img/projectsdecoration.png" alt="Decor website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Decor</h3>
@@ -624,13 +721,12 @@
                     </a>
                 </div>
 
-
-
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href=" https://asantrading.se/" target="_blank" class="portfolio-link">
+                    <a href=" https://asantrading.se/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/asantrading.png" alt="Asan Trading">
+                                <img src="img/asantrading.png" alt="Asan Trading website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Asan Trading</h3>
@@ -641,13 +737,13 @@
                     </a>
                 </div>
 
-
-
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://platin-imex.co/ar" target="_blank" class="portfolio-link">
+                    <a href="https://platin-imex.co/ar" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/platin.png" alt="Platin">
+                                <img src="img/platin.png" alt="Platin website preview" loading="lazy" decoding="async"
+                                    width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Platin</h3>
@@ -658,29 +754,14 @@
                     </a>
                 </div>
 
-
-
+            
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://www.bstc.com.jo/en" target="_blank" class="portfolio-link">
+                    <a href="https://nouralbalad.com/en" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/bstc.png" alt="BUSTAMI & SAHEP">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>BUSTAMI & SAHEP</h3>
-                                <p class="color-dark">Website</p>
-                                <p class="color-dark">Blue Ray for Web Solutions</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://nouralbalad.com/en" target="_blank" class="portfolio-link">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/nouralbalad.png" alt="Nour Al Balad">
+                                <img src="img/nouralbalad.png" alt="Nour Al Balad website preview" loading="lazy"
+                                    decoding="async" width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Nour Al Balad</h3>
@@ -691,15 +772,12 @@
                     </a>
                 </div>
 
-
-
-
-
                 <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <a href="https://keesapp.com/" target="_blank" class="portfolio-link">
+                    <a href="https://keesapp.com/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/keesapp.png" alt="Kees">
+                                <img src="img/keesapp.png" alt="Kees mobile app preview" loading="lazy" decoding="async"
+                                    width="400" height="300">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Kees</h3>
@@ -710,50 +788,45 @@
                     </a>
                 </div>
 
-
-
-
-
-
-
-
-
-
-
             </div>
         </div>
-
     </div>
     <!-- Portfolio End -->
 
-
     <!-- Footer Start -->
-    <div class="footer wow fadeIn" id="footer" data-wow-delay="0.3s">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="footer-info">
-                    <h2>Qusai Khaled</h2>
-                    <h3>Jordan-Amman</h3>
-                    <div class="footer-menu">
-                        <p>+962780316716</p>
-                        <p>qusai952198@gmail.com</p>
-                    </div>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/qsy.alnablsy" target="_blank"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/in/qusai-khaled-7a4b06326" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/Qusai-khaled" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
+ <div class="footer wow fadeIn" id="footer" data-wow-delay="0.3s">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="footer-info">
+                <h2>Qusai Khaled</h2>
+                <h3>Jordan-Amman</h3>
+                <div class="footer-menu">
+                    <p>+962780316716</p>
+                    <p>qusai952198@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/qsy.alnablsy" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/qusai-khaled-7a4b06326" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/Qusai-khaled" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                     <a href="https://wa.me/962780316716" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
-
         </div>
     </div>
+</div>
+
     <!-- Footer End -->
 
     <!-- Back to top button -->
-    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <a href="#" class="btn back-to-top" aria-label="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
     <!-- Pre Loader -->
     <div id="loader" class="show">
@@ -761,17 +834,20 @@
     </div>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- ملاحظة: أزلت integrity لتجنب أخطاء SRI على GitHub Pages، وحافظت على الترتيب + defer -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" defer></script>
+
+    <script src="lib/easing/easing.min.js" defer></script>
+    <script src="lib/wow/wow.min.js" defer></script>
+    <script src="lib/waypoints/waypoints.min.js" defer></script>
+    <script src="lib/typed/typed.min.js" defer></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
+    <script src="lib/isotope/isotope.pkgd.min.js" defer></script>
+    <script src="lib/lightbox/js/lightbox.min.js" defer></script>
+
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>
